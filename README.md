@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/chrisn/rollup-plugin-peer-deps-external/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/chrisn/rollup-plugin-peer-deps-external/actions) [![npm](https://img.shields.io/npm/v/rollup-plugin-peer-deps-external.svg)](https://www.npmjs.com/package/rollup-plugin-peer-deps-external)
+[![Build Status](https://github.com/chrisn/rollup-plugin-peer-deps-external/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/chrisn/rollup-plugin-peer-deps-external/actions) [![npm](https://img.shields.io/npm/v/@chrisneedham/rollup-plugin-peer-deps-external.svg)](https://www.npmjs.com/package/@chrisneedham/rollup-plugin-peer-deps-external)
 
 # Rollup Plugin Peer Deps External
 Automatically externalize `peerDependencies` in a `rollup` bundle.
