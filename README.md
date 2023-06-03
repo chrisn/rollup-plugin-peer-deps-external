@@ -8,7 +8,7 @@ Automatically externalize `peerDependencies` in a `rollup` bundle.
 
 ## Motivation
 
-When bundling a library using [`rollup`](https://github.com/rollup/rollup), we generally want to keep from including  [`peerDependencies`](https://nodejs.org/en/blog/npm/peer-dependencies/) since they are expected to be  provided by the consumer of the library. By excluding these dependencies, we keep bundle size down and avoid bundling duplicate dependencies.
+When bundling a library using [`rollup`](https://github.com/rollup/rollup), we generally want to keep from including [`peerDependencies`](https://nodejs.org/en/blog/npm/peer-dependencies/) since they are expected to be provided by the consumer of the library. By excluding these dependencies, we keep bundle size down and avoid bundling duplicate dependencies.
 
 We can achieve this using the rollup [`external`](https://github.com/rollup/rollup/wiki/JavaScript-API#external) configuration option, providing it a list of the peer dependencies to exclude from the bundle. This plugin automates the process, automatically adding a library's `peerDependencies` to the `external` configuration.
 
@@ -64,7 +64,7 @@ export default {
   plugins: [
     // Preferably set as first plugin.
     peerDepsExternal({
-      includeDependencies: true,
+      includeDependencies: true
     })
   ]
 };
