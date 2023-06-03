@@ -8,6 +8,7 @@ export default {
     babel({
       include: 'src/**/*.js',
       exclude: 'node_modules/**',
+      babelHelpers: 'bundled'
     }),
   ],
   output: [
@@ -19,5 +20,5 @@ export default {
       file: './dist/rollup-plugin-peer-deps-external.module.js',
       format: 'es',
     }
-  ],
+  ]
 }
