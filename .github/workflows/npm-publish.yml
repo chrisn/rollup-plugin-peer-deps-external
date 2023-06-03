@@ -35,6 +35,6 @@ jobs:
       - name: Set env vars for beta release
         run: echo "NPM_TAG=beta" >> $GITHUB_ENV
         if: ${{ contains(github.ref, 'beta') }}
-      - run: yarn publish --tag ${{ env.NPM_TAG }}
+      - run: yarn publish --tag ${{ env.NPM_TAG }} --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
